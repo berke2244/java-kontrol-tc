@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+         <meta charset="utf-8">
+
+ <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/
+dist/css/bootstrap.min.css”>
+ <script src=“https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/
+jquery.min.js”></script>
+ <script src=“https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/
+umd/popper.min.js”></script>
+ <script src=“https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/
+bootstrap.min.js”></script>
+ <style>.arkaplan{
+ margin:auto;
+ margin-top:20px;
+ height:auto;
+ width:500px;
+ color:indigo;
+ border:2px solid black;
+ padding:25px;
+ background:azure;
+ }
+
+      table {
+         width: 100%;
+         border-collapse: collapse;
+         border: 40px;
+      }
+      td {
+         padding: 8px;
+         text-align: left;
+         border-bottom: 1px solid #ddd;
+      }
+</style>
+</head>
+
+<body>
+    <div class="arkaplan">
+ 
+<form action="gonder.php" method="post" enctype="multipart/form-data">
+    <label for="kimlikNo">TC Kimlik:</label><br>
+    <input type="text" id="kimlikNo" name="kimlikNo" required><br>
+    <label for="adSoyad">Ad Soyad:</label><br>
+    <input type="text" id="adSoyad" name="adSoyad" required><br>
+    <label for="yas">Yaş:</label><br>
+    <input type="number" id="yas" name="yas" required><br>
+    <label for="mail">E-posta:</label><br>
+    <input type="email" id="mail" name="mail" required><br>
+    <label for="yazilimDili">Yazılım Dili:</label><br>
+    <input type="text" id="yazilimDili" name="yazilimDili" required><br>
+    <label for="yazilimGirisTarihi">Yazılıma Giriş Tarihi:</label><br>
+    <input type="date" id="yazilimGirisTarihi" name="yazilimGirisTarihi" required><br>
+    <label for="deneyimYili">Deneyim Yılı:</label><br>
+    <input type="range" id="deneyimYili" name="deneyimYili" min="1" max="10" step="1" required><br>
+    <label for="programlamaDilleri">Programlama Dilleri:</label><br>
+    <input type="checkbox" id="php" name="programlamaDilleri[]" value="PHP">
+    <label for="php">PHP</label><br>
+    <input type="checkbox" id="java" name="programlamaDilleri[]" value="Java">
+    <label for="java">Java</label><br>
+    <input type="checkbox" id="csharp" name="programlamaDilleri[]" value="C#">
+    <label for="csharp">C#</label><br>
+    <label for="foto">Fotoğraf:</label><br>
+    <input type="file" id="foto" name="foto" accept="image/*" required><br>
+    <input type="submit" value="Gönder">
+
+ </form>
+ </div>
+ 
+</body>
+</html>
